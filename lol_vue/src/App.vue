@@ -14,10 +14,10 @@
       <a href="#">라이엇 스토어</a>
       <a href="#">고객지원</a>
     </div>
-  </div>
-  <div class="nav_button">
-    <button class="login">로그인</button>
-    <button type="button" class="join">회원가입</button>
+    <div class="nav_client">
+      <a href="#" class="login">로그인</a>
+      <a href="#" class="join">회원가입</a>
+    </div>
   </div>
   
   

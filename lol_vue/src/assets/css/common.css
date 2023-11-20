@@ -5,14 +5,14 @@
     box-sizing: border-box;
 }
 
+a:link, a:visited {
+    color: #f9f9f9;
+}
+
 /* #####헤더 네비게이션##### */
 .nav_container {
     width: 100%;
-	height: 80px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+	height: 80px;    
     background-color: rgb(17, 17, 17);
     font-size: 15px;
     font-weight: bold;
@@ -35,10 +35,26 @@
     display: flex;
     align-items: center;
     margin-left: 80px;
-    color: #fff;
+    color: #fff;    
 }
 
 .nav_a a {
     margin-right: 30px;
     
 }
+
+.nav_client {
+    border: 1px solid transparent;
+    background-color: rgba(128,128,128,.2);
+    color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    font-size: 15px;
+    float: right;
+}
+
+/* .login {
+    ma
+} */
