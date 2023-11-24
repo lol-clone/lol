@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
 
+Route::get('/', function () {
+    return view('login');
+});
 
 // 유저 로그인&회원가입
 
@@ -16,7 +19,7 @@ Route::post('/user/login', [UserController::class, 'loginpost'])->name('user.log
 // << 중기 >>
 Route::get('/user/register', [UserController::class, 'RegisterGet'])->name('user.register.get'); 
 // 회원가입 화면이동
-Route::post('/user/register', [UserController::class, 'RegisterPost'])->name('user.registrer.post'); 
+Route::middleware('user.info.validation')->post('/user/register', [UserController::class, 'RegisterPost'])->name('user.registrer.post'); 
 // 회원가입 처리
 Route::get('/user/logout', [UserController::class, 'LogoutGet'])->name('user.logout.get'); 
 // 로그아웃 처리

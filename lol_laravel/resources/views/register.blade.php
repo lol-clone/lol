@@ -18,7 +18,7 @@
         </div>
         <div>
             <label for="password_confirmation" class="">비밀번호 확인</label>
-            {{-- password_confirmation : 유효성 검사실패 시 inpu 박스 테두리 붉게 변경 --}}
+            {{-- password_confirmation : 유효성 검사실패 시 input 박스 테두리 붉게 변경 --}}
             <input type="password" class="" id="password_confirmation" name="password_confirmation" autocomplete="off">
         </div>
         <div>
