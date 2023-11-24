@@ -38,8 +38,9 @@ class UserController extends Controller
         return redirect()->route('user.login.get');
     }
 
-    public function update(Request $request, $id)
-    {
-        //
+    public function Logoutget() {
+        Session::flush(); // 세션파기
+        Auth::logout(); // 로그아웃
+        return redirect()->route('user.login.get');
     }
 }
