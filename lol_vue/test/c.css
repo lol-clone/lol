@@ -1,0 +1,43 @@
+.best-container{
+	margin-top: 80px;
+}
+.carousel-container {
+    overflow: hidden;
+    width: 80%;
+    margin: 20px auto;
+}
+.carousel-track {
+    display: grid;
+    grid-template-columns: repeat(10, 320px); /* 충분히 큰 숫자로 설정하여 모든 아이템을 한 줄에 배치합니다. */
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+	height: 280px;
+	min-width: calc(80% / 5); /* 화면에 5개만 표시되도록 조절 */
+}
+.best-p{
+	font-size: 0.6rem;
+	width: 200px;
+	margin: 0px;
+	padding-top: 10px;
+}
+.best-content {
+	font-size: 0.8rem;
+}
+
+.best-gird-box2 {
+	display: grid;
+	grid-template-columns: repeat(13, 200px); /* 충분히 큰 숫자로 설정하여 모든 아이템을 한 줄에 배치합니다. */
+    transition: transform 0.5s ease-in-out;
+	list-style: none;
+	gap: 30px;
+}
+.div-box {
+	height: 280px;
+	min-width: calc(80% / 5); /* 화면에 5개만 표시되도록 조절 */
+}
+.box {
+	margin-left: 200px;
+	overflow: hidden;
+    width: 80%;
+}
